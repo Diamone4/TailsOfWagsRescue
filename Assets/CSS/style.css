@@ -370,6 +370,14 @@ footer span {
     .arrow {color:transparent;
 
     }
+    .odd {
+        display:flex;
+        order:1;
+    }
+    .profile {
+            flex-wrap: wrap;
+            flex-direction:column;
+    }
 }
 .hamburger {
     display:none;
