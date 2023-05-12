@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Fontdiner+Swanky&display=swap');
+:root {
+    font-size: 62.5%;
+    --green: #576F30;
+    --black: #000000;
+    --white: #FFFFFF;
+    --yellow: #FFF859;
+}
+
+h1 {
+    font-family: 'Fontdiner Swanky', sans-serif;
+    font-size: 3.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px 0px;
+    margin:0px;
+}
+h2 {
+    font-family: 'Comic Neue';
+    font-size: 2.3rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start
+}
+
+h3 {
+    font-family: 'Comic Neue';
+    font-size: 1.8rem;
+}
+
+p, li {
+    font-family: 'Comic Neue';
+    font-size: 1.7rem;
+}
+
+nav menu li {
+    font-family: 'Comic Neue';
+    font-size: 2.3rem;
+}
+
+/*FOR JS*/
+.answer {
+    padding: 0 18px;
+    background-color: transparent;
+    display: none;
+    overflow: hidden;
+    text-align:left;
+  } 
+
+.logo {
+    font-family: 'Fontdiner Swanky';
+    font-size: 3.8rem;
+    color: var(--white);
+    text-decoration:none;
+    display:flex;
+
+
+}
+
+.motto {
+    font-family: 'Comic Neue';
+    color: white;
+    justify-content: flex-end;
+    display:inline;
+    
+}
+
+header nav menu li a, header nav menu li button {
+    font-family: 'Comic Neue';
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: var(--white);   
+}
+
+header nav menu a, header nav menu button {
+    background: none;
+    cursor: pointer;
+    padding: 0px;
+    color:white;
+    border-style: none;
+    display:flex;
+    justify-content: end;
+    align-items: end;
+}
+
+header nav menu menu {
+    display: none;
+}
+
+
+header nav menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: end;
+    margin:20px 0px 0px 0px;
+    padding-left: 0px;
+
+}
+
+   
+header nav {
+    background-color: var(--green);
+    padding: 25px;
+}   
+
+header nav menu li {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+nav menu button + menu li, footer nav menu {
+    list-style: none;
+    margin-right: 0px;
+
+}
+
+header nav menu button:hover, header nav menu li a:hover {
+    color: var(--yellow);
+}
+
+main div {
+    flex-wrap:wrap;
+    display:flex;
+    text-align:center;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+main {
+    margin: 20px 50px 20px 50px
+}
+
+
+@media (min-width: 1040px) {header nav menu li:hover button + menu {
+    display: block;
+    position: absolute;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}}
+
+
+
+main section div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+#intro {
+    display:flex;
+    text-align:center;
+    align-items:flex-start;
+    margin: 7px;
+    flex-direction:row;
+}
+
+.profile {
+    display:flex;
+    text-align:center;
+    align-items:center;
+    margin: 7px;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+
+.intro-button {
+    display:flex;
+    height:20px;
+    align-self:flex-start;
+
+}
+
+li {
+    text-align:start;
+}
+#donate {
+    display:flex;
+    justify-content:center;
+
+}
+
+#types article {
+    display:flex;
+    margin-left: 60px;
+    margin-right:60px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+#intro h3 {
+    padding:4px;
+    margin-right:10px;
+}
+
+
+.button {
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: 'Comic Neue';
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 14px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 15px;
+    border-width:2px;
+    display: flex;
+    transition: color .3s, outline .3s;
+
+}
+
+.button img, .button svg  {
+    vertical-align: bottom;
+    rotate:15%;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+}
+
+
+svg {
+    display:flex;
+    align-self:center;
+    justify-content: center;
+    margin-left:8px;
+}
+
+#bottom {
+    display:flex;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    margin: 7px;
+    flex-wrap: wrap;
+}
+
+.button:hover {
+    outline-color: var(--yellow);
+    outline-width: 4px;
+    outline-style: solid;
+    cursor: pointer;
+    color: var(--yellow);
+    text-decoration: var(--yellow);
+
+}
+
+.center {
+    display: block;
+    text-align:center;
+}
+
+
+
+
+
+form input {
+    font-size: 18px;
+    width: 400px;
+    height:30px;
+    border:none;
+    border-radius: 1px;
+    margin-bottom: 20px;
+    outline-style: solid;
+    outline-color:black;
+}
+
+form input:focus {
+    outline-color:black;
+    outline-width: 3px;
+}
+
+form label {
+    display: block;
+    text-align:left;
+}
+
+form button {
+    border:none;
+    margin: 15px;
+    border-width:2px;
+    background-color:var(--green);
+    color:white;
+    border-radius:7px;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex-direction: row;
+    transition: color .3s, outline .3s;
+    padding: 14px;
+    outline: none;
+    font-family: 'Comic Neue';
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    outline-color: var(--yellow);
+    outline-width: 4px;
+    outline-style: solid;
+    cursor: pointer;
+    color: var(--yellow);
+    text-decoration: var(--yellow);
+
+}
+
+
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 50px;
+}
+
+footer nav > menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+footer li > a {
+    color:white;
+    text-decoration:none;
+    text-align: center;
+}
+
+footer a:hover {
+    color: var(--yellow);
+}
+
+footer menu {
+    padding: 0px;
+}
+
+footer menu li {
+    margin-bottom: 10px;
+}
+
+footer span {
+    text-align: center;
+    display: block;
+}
+/*For header*/
+@media (max-width:1010px) {
+    header nav {flex-wrap: wrap; padding:5px}
+    header nav .logo {width:100%; padding:7px}
+    header nav .motto {padding-left: 35px}
+    header nav menu li {width:100%; }
+    header nav menu {align-items:start; padding:0px; text-align:left; }
+    header nav menu li a, header nav menu li button {padding:40px 0px 30px 30px; display: flex; font-size: 2.4rem; border-bottom: 2px solid var(--white); width:100%; border-radius: 0px; text-align:left; flex-wrap:wrap; flex-direction:column; justify-content:center; align-items:start;}
+    .donate {width:min-content}
+    .hamburger {
+                        display:flex;
+                        justify-content:end;}
+    nav menu li menu {
+        display:flex;
+    }
+    .arrow {color:transparent;
+
+    }
+}
+.hamburger {
+    display:none;
+}
+
+
+/*End of header reactiveness*/
+
+/*JS feature on foster questions page*/
+.accordion {
+    background-color: var(--green);
+    font-family: 'Comic Neue';
+    font-weight: 300;
+    font-size: 2rem;
+    border-radius:7px;
+    margin:2px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align:left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion:hover {
+    color: var(--yellow);
+  }
+  .active {
+    color:white;
+  }
+    .accordion:after {
+        content: '\002B';
+        font-size:  30px;
+        float:right;
+        margin-left: 5px;
+        color:white;
+      }
+      
+      .active:after {
+        content: "\002D";
+      }
+
+      /*Accessibility*/
+      #skip-content {
+        position:absolute;
+        top:-100px;
+        background-color: var(--white);
+        outline: none;
+        border: none;
+        color: var(--green);
+        font-family: 'Comic Neue';
+        font-weight: 700;
+        font-size: 2rem;
+        padding: 14px;
+        text-decoration: none;
+    }
+    
+    #skip-content:focus {
+        top:0px;
+    }
+
